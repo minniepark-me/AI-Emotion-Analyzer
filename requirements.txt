@@ -1,3 +1,5 @@
-nltk
 streamlit
-vaderSentiment
+transformers
+torch
+pandas
+plotly
