@@ -50,7 +50,7 @@ if st.button("Analyze Emotion", type="primary"):
             raw_results = classifier(user_input)[0]
             
             # Format results into a DataFrame
-            df = pd.DataFrame(raw_results)
+            df = pd.DataFrame(raw_results, index=[0])
             df['score'] = (df['score'] * 100).round(2) # Convert to percentage
             
             # Find the top emotion
